@@ -67,8 +67,9 @@ body main #gridBoxes {
   width: 100%;
 }
 body main #gridBoxes .boxes {
-  font-size: 16px;
+  font-size: 13px;
   flex-direction: column;
+  gap: 10px;
   border-radius: 30px;
   height: 100%;
   margin-top: 26px;
@@ -93,6 +94,7 @@ body main #gridBoxes .boxes {
   justify-content: center;
   color: #000000;
   transition: all 0.5s;
+  text-align: center;
 }
 body main #gridBoxes .boxes:hover .coverBox {
   -webkit-transition: all 0.5s;

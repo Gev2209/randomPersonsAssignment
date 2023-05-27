@@ -18,6 +18,7 @@ function forPaint () {
         element.classList.add('circle')
         element.innerText = item
         gridBox.appendChild(element)
+        
     })
 }
 
@@ -27,7 +28,7 @@ function movePerson(element, selectedBox) {
     element.classList.add('animate');
     const boxRect = selectedBox.getBoundingClientRect();
     const elementRect = element.getBoundingClientRect();
-  
+    
     const boxCenterX = boxRect.left + boxRect.width / 2;
     const boxCenterY = boxRect.top + boxRect.height / 2;
     const elementCenterX = elementRect.left + elementRect.width / 2;
@@ -58,6 +59,7 @@ function shuffle () {
 
     const randomBoxIndex = Math.floor(boxElements.length * Math.random())
     const selectedBox = boxElements[randomBoxIndex]
+
 
     if (selectedBox.childElementCount === 3) {
         const boxIndex = boxElements.indexOf(selectedBox);
